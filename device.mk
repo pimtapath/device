@@ -14,19 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#OpenGAPPS
-GAPPS_VARIANT := pico
-GAPPS_PRODUCT_PACKAGES += \
-    GoogleBackupTransport \
-    GoogleContactsSyncAdapter \
-    GoogleServicesFramework \
-    GoogleOneTimeInitializer \
-    PrebuiltGmsCore \
-    GoogleLoginService \
-    GooglePartnerSetup \
-    Phonesky
-GAPPS_EXCLUDED_PACKAGES := PrebuiltGmsCoreInstantApps GooglePackageInstaller FaceLock AndroidPlatformServices
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlay
@@ -332,4 +319,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
