@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/gzosp_addison.mk
+    $(LOCAL_DIR)/carbon_addison.mk
