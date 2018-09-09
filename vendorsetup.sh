@@ -1,1 +1,1 @@
-add_lunch_combo gzosp_addison-userdebug
+add_lunch_combo carbon_addison-userdebug
