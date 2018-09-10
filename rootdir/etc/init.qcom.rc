@@ -562,7 +562,7 @@ service vendor.qcamerasvr /system/vendor/bin/mm-qcamera-daemon
 on property:vold.decrypt=trigger_restart_framework
     start vendor.wcnss-service
 
-service vendor.wcnss-service /vendor/bin/wcnss_service
+service vendor.wcnss-service /system/vendor/bin/wcnss_service
     class main
     user system
     group system wifi radio
