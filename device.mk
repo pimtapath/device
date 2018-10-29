@@ -108,7 +108,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     libgpu_mapper_shim \
     libjustshoot_shim \
-    Camera2
+    GoogleCameraMod
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/msm8953_mot_camera.xml:system/etc/camera/msm8953_mot_camera.xml \
