@@ -93,6 +93,8 @@ TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/vendor/bin/mm-qcamera-daemon=26
 USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_USES_QTI_CAMERA_DEVICE := true
+BOARD_QTI_CAMERA_32BIT_ONLY := true
 
 # Charger
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
@@ -145,6 +147,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 TARGET_RIL_VARIANT := caf
+
+#QTI
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
