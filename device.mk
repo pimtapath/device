@@ -257,7 +257,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.ril.sh \
     ueventd.rc \
-    wlan_carrier_bin.sh
+    wlan_carrier_bin.sh \
+    cpugovernor.sh
 
 # RIL
 PRODUCT_PACKAGES += \

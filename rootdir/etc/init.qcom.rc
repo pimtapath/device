@@ -678,6 +678,11 @@ service vendor.rild2-wrapper /vendor/bin/init.qcom.ril.sh
     group root
     oneshot
 
+service cpugovernor /vendor/bin/cpugovernor.sh
+    class late_start
+    user root
+    group root
+
 service vendor.time_daemon /system/vendor/bin/time_daemon
     class main
     user root
@@ -729,7 +734,6 @@ on property:sys.boot_completed=1
 
     # governor settings
     write /sys/devices/system/cpu/cpu0/online 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "electron"
     write /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay "19000 1401600:39000"
     write /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 85
     write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 20000
@@ -738,7 +742,6 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/interactive/target_loads "85 1401600:80"
     write /sys/devices/system/cpu/cpufreq/interactive/min_sample_time 39000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 652800
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1958400
 
     # re-enable thermal & BCL core_control now
     write /sys/module/msm_thermal/core_control/enabled 1
