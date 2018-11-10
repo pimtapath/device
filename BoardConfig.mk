@@ -159,7 +159,6 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib64/libmdmcutback.so|libqsap_shim.so \
     /system/vendor/lib64/libsensorndkbridge.so|libshim_ril.so \
-    /system/vendor/lib/libmot_gpu_mapper.so|libgpu_mapper_shim.so \
     /system/lib/libjustshoot.so|libjustshoot_shim.so \
     /system/vendor/lib64/vendor.qti.gnss@1.0_vendor.so|libgnss_shim.so \
     /system/lib64/vendor.qti.gnss@1.0.so|libgnss_shim.so
