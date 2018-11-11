@@ -93,14 +93,14 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>10.22825</item>   <!-- 0-1 -->
-        <item>15.12821</item>   <!-- 1-2 -->
-        <item>19.0392</item>    <!-- 2-3 -->
-        <item>22.454172</item>  <!-- 3-4 -->
-        <item>25.448406</item>  <!-- 4-8 -->
-        <item>31.200361</item>  <!-- 8-12 -->
-        <item>35.231995</item>  <!-- 12-20 -->
-        <item>41.076897</item>  <!-- 20-33 -->
+        <item>9.22825</item>   <!-- 0-1 -->
+        <item>14.12821</item>   <!-- 1-2 -->
+        <item>18.0392</item>    <!-- 2-3 -->
+        <item>21.454172</item>  <!-- 3-4 -->
+        <item>24.448406</item>  <!-- 4-8 -->
+        <item>30.200361</item>  <!-- 8-12 -->
+        <item>34.231995</item>  <!-- 12-20 -->
+        <item>40.076897</item>  <!-- 20-33 -->
         <item>47.72592</item>   <!-- 33-55 -->
         <item>55.562805</item>  <!-- 55-90 -->
         <item>64.97754</item>   <!-- 90-148 -->
