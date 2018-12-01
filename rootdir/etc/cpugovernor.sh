@@ -1,7 +1,7 @@
 #!/vendor/bin/sh
 
 echo 'cfq' > /sys/block/mmcblk0/queue/scheduler
-echo '1408' > /sys/block/mmcblk0/queue/read_ahead_kb
+echo '1792' > /sys/block/mmcblk0/queue/read_ahead_kb
 
 if [ -d /sdcard/electron ]; then
     echo 'electron' > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
