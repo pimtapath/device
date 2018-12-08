@@ -99,10 +99,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    libbt-vendor
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -140,6 +136,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
+    android.hardware.drm@1.1-service.clearkey \
     libprotobuf-cpp-lite
 
 # Ebtables
@@ -160,7 +157,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libgnsspps \
     libgnss \
-    libgnss_shim \
     android.hardware.gnss@1.0-impl-qti
 
 # Health
@@ -259,6 +255,7 @@ PRODUCT_PACKAGES += \
     init.mmi.rc \
     init.mmi.usb.rc \
     init.qcom.rc \
+    init.qcom.power.rc \
     init.qcom.ril.sh \
     ueventd.rc \
     wlan_carrier_bin.sh \
@@ -266,6 +263,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.0 \
     libqsap_shim \
     librmnetctl \
     libsensorndkbridge \
