@@ -1535,8 +1535,6 @@ bool SystemStatus::eventDataItemNotify(IDataItemCore* dataitem)
             break;
         default:
             break;
-        default:
-            break;
     }
     pthread_mutex_unlock(&mMutexSystemStatus);
     return ret;
