@@ -379,7 +379,6 @@ service cpugovernor /vendor/bin/cpugovernor.sh
     class late_start
     user root
     group root
-    disabled
 
 service vendor.time_daemon /system/vendor/bin/time_daemon
     class main

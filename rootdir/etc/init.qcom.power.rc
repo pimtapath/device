@@ -69,7 +69,6 @@ on property:sys.boot_completed=1
     # governor settings
     write /sys/devices/system/cpu/cpu0/online 1
     write /proc/sys/kernel/sched_upmigrate_min_nice 19
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay "10000 1401600:20000 1804800:40000 1958400:50000"
     write /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 93
     write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 30000
