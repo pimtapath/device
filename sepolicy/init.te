@@ -13,6 +13,7 @@ allow init sysfs:file {setattr};
 # cpugovernor.sh
 allow init vendor_file:file {execute_no_trans};
 allow init storage_file:lnk_file {read};
+allow init mnt_user_file:lnk_file {read};
 allow init sysfs_devices_system_cpu:file {write};
 
 binder_use(init)
