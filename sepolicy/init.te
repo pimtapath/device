@@ -8,6 +8,8 @@ allow init tee_device:chr_file { write ioctl };
 allow init debugfs:file write;
 allow init firmware_file:dir mounton;
 
+allow init sysfs:file {setattr};
+
 # cpugovernor.sh
 allow init vendor_file:file {execute_no_trans};
 allow init storage_file:lnk_file {read};
