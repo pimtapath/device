@@ -6,3 +6,5 @@ allow thermal-engine sysfs_batteryinfo:file w_file_perms;
 
 r_dir_file(thermal-engine, sysfs_uio)
 r_dir_file(thermal-engine, sysfs_uio_file)
+
+allow thermal-engine thermal-engine:capability { sys_admin };
