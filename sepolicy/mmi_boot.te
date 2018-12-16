@@ -13,5 +13,6 @@ allow mmi_boot self:capability chown;
 allow mmi_boot sysfs_socinfo:file write;
 allow mmi_boot vendor_radio_data_file:dir create_dir_perms;
 allow mmi_boot vendor_radio_data_file:file create_file_perms;
+allow mmi_boot mmi_boot:capability sys_admin;
 
 set_prop(mmi_boot, hw_rev_prop);
