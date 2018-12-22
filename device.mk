@@ -105,9 +105,9 @@ PRODUCT_PACKAGES += \
     libjustshoot_shim \
     Motocam
 
-# Phonograph
+# MusicPlayer
 PRODUCT_PACKAGES += \
-    Phonograph
+    Eleven
 
 # CarrierConfig
 PRODUCT_PACKAGES += \
