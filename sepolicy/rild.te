@@ -12,7 +12,14 @@ allow rild radio_data_file:file create_file_perms;
 allow rild proc:file r_file_perms;
 
 allow rild vendor_file:file execute_no_trans;
-allow rild rild:capability {sys_admin};
 
 r_dir_file(rild, fsg_file)
 set_prop(rild, vendor_radio_prop)
+
+allow rild fsg_file:file { getattr open read };
+allow rild fsg_file:dir { search open read };
+allow rild fsg_file:lnk_file read;
+allow rild rild_exec:file execute_no_trans;
+allow rild fwk_sensor_hwservice:hwservice_manager find;
+allow rild nv_data_file:dir rw_dir_perms;
+allow rild nv_data_file:file create_file_perms;
