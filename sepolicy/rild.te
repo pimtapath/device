@@ -21,5 +21,3 @@ allow rild fsg_file:dir { search open read };
 allow rild fsg_file:lnk_file read;
 allow rild rild_exec:file execute_no_trans;
 allow rild fwk_sensor_hwservice:hwservice_manager find;
-allow rild nv_data_file:dir rw_dir_perms;
-allow rild nv_data_file:file create_file_perms;
