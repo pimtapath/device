@@ -105,10 +105,6 @@ PRODUCT_PACKAGES += \
     libjustshoot_shim \
     Motocam
 
-# MusicPlayer
-PRODUCT_PACKAGES += \
-    Eleven
-
 # CarrierConfig
 PRODUCT_PACKAGES += \
     CarrierConfig
