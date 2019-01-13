@@ -3,3 +3,5 @@ allow rmt_storage debugfs_rmt_storage:file w_file_perms;
 allow rmt_storage rmt_storage:capability {sys_admin};
 
 r_dir_file(rmt_storage, fsg_file)
+
+allow rmt_storage persist_file:dir r_dir_perms;
