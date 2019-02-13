@@ -18,15 +18,6 @@ on late-fs
 
 on property:service.bootanim.exit=1
     write /dev/kmsg "Boot completed"
-
-    # Setup permission for powerHAL
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
-    chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
-
-    # Enable PowerHAL hint processing
-    setprop vendor.powerhal.init 1
-
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
     write /proc/sys/vm/swappiness 40
