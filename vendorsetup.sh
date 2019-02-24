@@ -1,1 +1,1 @@
-add_lunch_combo aosip_addison-userdebug
+add_lunch_combo candy_addison-userdebug
