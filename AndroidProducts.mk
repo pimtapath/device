@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip.mk
+    $(LOCAL_DIR)/pa_addison.mk
