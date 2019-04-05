@@ -1,17 +1,19 @@
-ifeq ($(BOARD_KERNEL_SEPARATED_DT),true)
-LOCAL_PATH := $(call my-dir)
-
+LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := \
-	dtbtool.c
+LOCAL_SRC_FILES := dtbtool.py
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_IS_HOST_MODULE := true
 
-LOCAL_CFLAGS += \
-	-Wall
-
-## Hybrid v1/v2 dtbTool. Use a different name to avoid conflicts with copies in device repos
 LOCAL_MODULE := dtbToolAosip
-LOCAL_MODULE_TAGS := optional
 
-include $(BUILD_HOST_EXECUTABLE)
-endif
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := unpack_dtb.py
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_IS_HOST_MODULE := true
+
+LOCAL_MODULE := unpack_dtb
+
+include $(BUILD_PREBUILT)
